@@ -5,7 +5,7 @@ Foi desenvolvido com objetivo de prover lista de proxies grátis para utilizaç�
 # Documentação da API
 Para visualizar a documentação execute o script wsgi.py e acesse a aplicação no endereço http://127.0.0.1:5000/
 
-# Consumindo a API vie Python com requests
+# Consumindo a API via Python com requests
 <code>
 import requests
   
