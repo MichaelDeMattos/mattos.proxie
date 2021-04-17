@@ -9,12 +9,9 @@ Para visualizar a documentação execute o script wsgi.py e acesse a aplicação
 <code>
 import requests
   
-  
 r = requests.get("http://127.0.0.1:5000/br")
 
-
 j.json()
-
 
 [
   {
