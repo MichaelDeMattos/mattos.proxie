@@ -8,11 +8,8 @@ Para visualizar a documentação execute o script wsgi.py e acesse a aplicação
 # Consumindo a API vie Python com requests
 <code>
 import requests
-  
 r = requests.get("http://127.0.0.1:5000/br")
-
 j.json()
-
 [
   {
     "anonymity": "elite proxy", 
