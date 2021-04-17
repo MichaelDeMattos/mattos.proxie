@@ -11,10 +11,10 @@ import requests
   
 r = requests.get("http://127.0.0.1:5000/br")
 
-j.json()
+r.json()
 
 [
-  {
+ {
     "anonymity": "elite proxy", 
     "country": "Brazil", 
     "google": "no", 
