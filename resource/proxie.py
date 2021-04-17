@@ -41,7 +41,7 @@ class Proxie(object):
             table = soup.body.tbody.find_all(["tr"])
             self.list_proxie = []
             for tag in table:
-                if tag is not [] and country == "all":
+                if tag is not [] and country.lower() == "all":
                    
                     self.list_proxie.append({"hostname": tag.findAll("td")[0].text,
                                              "port": tag.findAll("td")[1].text,

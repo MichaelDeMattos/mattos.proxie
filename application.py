@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 
-from proxie import Proxie
-from flask import Flask, render_template, jsonify
-from views import proxie
+from flask import Flask, jsonify
+from resource.views import resource
+from home.views import home
 
 # Application
-app = Flask(__name__, template_folder="templates")
+app = Flask(__name__)
 
 # Config
 app.config.update(
     DEGUB = True,
-    SECRET_KEY = None
+    SECRET_KEY = None,
 )
 
 # Blueprints
-app.register_blueprint(proxie)
-
+app.register_blueprint(resource)
+app.register_blueprint(home)
