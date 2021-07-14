@@ -4,6 +4,7 @@ Foi desenvolvido com objetivo de prover lista de proxies grátis para utilizaç�
 
 # Instalação 
 -- Python3.7 ou superior
+
 <code>pip3 install -r requeriments.pip3</code>
 
 # Documentação da API
