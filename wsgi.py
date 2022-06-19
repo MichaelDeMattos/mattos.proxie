@@ -1,6 +1,17 @@
-# -*- coding: utf-8 -*-
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    wsgi.py                                            :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: michael.ortiz <michael.ortiz@dotpyc.com    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/06/18 23:56:04 by michael.ort       #+#    #+#              #
+#    Updated: 2022/06/18 23:56:05 by michael.ort      ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-from application import app 
+
+from app import app
 
 if __name__ == "__main__":
-    app.run(debug=True) 
+    app.run(debug=True)
