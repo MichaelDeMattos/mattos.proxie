@@ -11,7 +11,9 @@ Foi desenvolvido com objetivo de prover lista de proxies grátis para utilizaç�
 Para visualizar a documentação execute o script wsgi.py e acesse a aplicação no endereço http://127.0.0.1:5000/
 
 # Consumindo a API via Python com requests
-<code>
+
+
+```bash
 import requests
   
 r = requests.get("http://127.0.0.1:5000/api/list_proxie?id_country=br")
@@ -30,10 +32,13 @@ r.json()
     "port": "35820"
   }, 
 ]
-</code>
+```
+
 
 # Consumindo a API via Fecth com JavaScript
-<code>
+
+
+```bash
 async function get_proxie_list() {
     const req = await fetch("http://127.0.0.1:5000/api/list_proxie?id_country=br", { method: "GET" });
     const resp = await req.json();
@@ -48,4 +53,4 @@ async function get_proxie_list() {
         "last_checked":"1 minute ago"
     }
 }
-</code>
+```
