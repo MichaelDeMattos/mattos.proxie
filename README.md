@@ -14,7 +14,7 @@ Para visualizar a documentação execute o script wsgi.py e acesse a aplicação
 <code>
 import requests
   
-r = requests.get("http://127.0.0.1:5000/br")
+r = requests.get("http://127.0.0.1:5000/api/list_proxie?id_country=br")
 
 r.json()
 
@@ -30,4 +30,22 @@ r.json()
     "port": "35820"
   }, 
 ]
+</code>
+
+# Consumindo a API via Fecth com JavaScript
+<code>
+async function get_proxie_list() {
+    const req = await fetch("http://127.0.0.1:5000/api/list_proxie?id_country=br", { method: "GET" });
+    const resp = await req.json();
+    console.log(resp);
+    {
+        "anonymity":"elite proxy",
+        "country":"Brazil",
+        "google":"no",
+        "hostname":"191.7.210.162",
+        "https":"yes",
+        "id_country":"BR",
+        "last_checked":"1 minute ago"
+    }
+}
 </code>
